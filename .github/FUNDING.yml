@@ -1,0 +1,4 @@
+# Lien de soutien par défaut pour les dépôts du compte qui n'ont pas le leur.
+# Le pseudo fait foi dans `apps-catalog.js` du socle (`SPONSOR_HANDLE`), d'où
+# les applications tirent le lien affiché dans leur pied de page.
+buy_me_a_coffee: mister.guiiug

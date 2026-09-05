@@ -1,0 +1,8 @@
+# Les issues libres restent possibles : tout ne rentre pas dans un gabarit.
+blank_issues_enabled: true
+
+# PAS DE `contact_links` ICI. Ce fichier sert de DÉFAUT à tous les dépôts du
+# compte, et une URL de signalement est propre à chaque dépôt : y mettre celle
+# d'un dépôt en particulier enverrait les rapports de vingt autres au mauvais
+# endroit. Le chemin est rappelé en tête du gabarit d'anomalie, où il désigne
+# l'onglet *Security* du dépôt que le lecteur a sous les yeux.

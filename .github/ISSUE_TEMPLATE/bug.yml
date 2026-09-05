@@ -1,0 +1,59 @@
+name: Anomalie
+description: Quelque chose ne fonctionne pas comme documenté.
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Faille de sécurité ? **Ne pas ouvrir d'issue publique** — passer par
+        l'onglet *Security* du dépôt (*Report a vulnerability*).
+
+  - type: textarea
+    id: attendu-obtenu
+    attributes:
+      label: Ce qui était attendu, et ce qui arrive
+      description: Les deux, côte à côte. Le second seul ne dit pas où est l'écart.
+      placeholder: |
+        Attendu : ...
+        Obtenu  : ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduire
+    attributes:
+      label: Comment le reproduire
+      description: Les gestes, dans l'ordre. Un cas minimal vaut mieux qu'un récit.
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version ou commit
+      description: Version publiée, numéro de build, ou empreinte du commit.
+    validations:
+      required: false
+
+  - type: input
+    id: environnement
+    attributes:
+      label: Environnement
+      description: Navigateur et version, système, appareil — ce qui est pertinent.
+      placeholder: Firefox 142, Android 15, téléphone
+    validations:
+      required: false
+
+  - type: textarea
+    id: journal
+    attributes:
+      label: Journal ou capture
+      description: >-
+        Console, trace d'erreur, capture d'écran. **Retirer ce qui identifie
+        quelqu'un** avant de coller.
+      render: text
+    validations:
+      required: false

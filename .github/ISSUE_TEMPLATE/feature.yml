@@ -1,0 +1,31 @@
+name: Évolution
+description: Proposer un ajout ou un changement de comportement.
+labels: ['enhancement']
+body:
+  - type: textarea
+    id: besoin
+    attributes:
+      label: Le besoin
+      description: >-
+        Ce que vous cherchez à faire, et pourquoi c'est difficile aujourd'hui.
+        Décrire le besoin plutôt que la solution laisse ouverte une réponse
+        meilleure que celle imaginée.
+    validations:
+      required: true
+
+  - type: textarea
+    id: contournement
+    attributes:
+      label: Ce que vous faites en attendant
+      description: >-
+        Le contournement actuel, même laid. C'est souvent lui qui montre la
+        vraie forme de la solution.
+    validations:
+      required: false
+
+  - type: textarea
+    id: piste
+    attributes:
+      label: Une piste, si vous en avez une
+    validations:
+      required: false
