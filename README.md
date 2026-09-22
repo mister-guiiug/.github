@@ -35,9 +35,13 @@ pas de bruit, il ne fait rien.** Le préréglage vit désormais dans le socle,
 et tous les dépôts pointent là. En remettre un ici recréerait exactement
 l'ambiguïté qui a coûté ces mois-là.
 
-**Aucun `profile/README.md`.** Ce fichier s'afficherait sur la page publique du
-compte : c'est une décision d'image, pas d'outillage.
+**Aucun `profile/README.md`.** Ce mécanisme n'existe que pour les
+*organisations*. Pour un compte personnel comme celui-ci, GitHub affiche le
+`README.md` du dépôt qui porte **le nom du compte** : le profil vit donc dans
+[`mister-guiiug/mister-guiiug`](https://github.com/mister-guiiug/mister-guiiug).
+Un fichier posé ici ne s'afficherait nulle part.
 
-**Aucune licence.** GitHub n'hérite pas les licences : un dépôt public sans
-`LICENSE` est « tous droits réservés » par défaut, quoi qu'il y ait ici. Cela
-se corrige dépôt par dépôt.
+**Aucune licence par défaut.** Le `LICENSE` de ce dépôt ne couvre que lui :
+GitHub n'hérite pas les licences, et un dépôt public sans la sienne est « tous
+droits réservés » par défaut, quoi qu'il y ait ici. Cela se corrige dépôt par
+dépôt.
