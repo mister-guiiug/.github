@@ -4,12 +4,12 @@ Ce dépôt ne contient aucun code. GitHub y cherche les **fichiers communautaire
 par défaut** du compte `mister-guiiug` : tout dépôt public qui n'a pas les
 siens hérite de ceux-ci.
 
-| Fichier                                                            | Ce qu'il devient                                                              |
-| ------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
-| [`SECURITY.md`](./SECURITY.md)                                     | La politique de signalement affichée sur l'onglet *Security* de chaque dépôt  |
-| [`.github/PULL_REQUEST_TEMPLATE.md`](./.github/PULL_REQUEST_TEMPLATE.md) | Le corps pré-rempli de toute nouvelle pull request                            |
-| [`.github/ISSUE_TEMPLATE/`](./.github/ISSUE_TEMPLATE)               | Les gabarits d'anomalie et d'évolution                                        |
-| [`.github/FUNDING.yml`](./.github/FUNDING.yml)                      | Le bouton *Sponsor*                                                            |
+| Fichier                                                                  | Ce qu'il devient                                                             |
+| ------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| [`SECURITY.md`](./SECURITY.md)                                           | La politique de signalement affichée sur l'onglet _Security_ de chaque dépôt |
+| [`.github/PULL_REQUEST_TEMPLATE.md`](./.github/PULL_REQUEST_TEMPLATE.md) | Le corps pré-rempli de toute nouvelle pull request                           |
+| [`.github/ISSUE_TEMPLATE/`](./.github/ISSUE_TEMPLATE)                    | Les gabarits d'anomalie et d'évolution                                       |
+| [`.github/FUNDING.yml`](./.github/FUNDING.yml)                           | Le bouton _Sponsor_                                                          |
 
 Un dépôt qui publie sa propre version d'un de ces fichiers garde la sienne :
 l'héritage ne s'applique qu'en son absence. C'est le cas de
@@ -22,7 +22,16 @@ vingtaine d'applications, ce qu'une version générique ne saurait dire.
 Au relevé du 05/09/2026, **aucun dépôt du compte n'avait de politique de
 sécurité** hormis le socle : vingt-trois dépôts publics n'offraient aucun canal
 de signalement privé, et rien ne le disait. Les fichiers communautaires par
-défaut règlent ce cas d'un seul endroit, sans rien copier dans chaque dépôt.
+défaut donnent une politique à chaque dépôt d'un seul endroit, sans rien copier
+dans chaque dépôt.
+
+**Une politique n'ouvre pas le canal pour autant.** Le bouton _Report a
+vulnerability_ qu'elle désigne n'apparaît que sur un dépôt où le signalement
+privé des vulnérabilités est activé. Au relevé du 29/09/2026, ce n'est le cas
+d'aucun des 31 dépôts publics du compte, socle compris, et le profil n'affiche
+aucune adresse de contact : le canal privé promis n'existe pas encore. Lire
+l'état plutôt que le supposer :
+`gh api repos/mister-guiiug/<dépôt>/private-vulnerability-reporting --jq .enabled`.
 
 ## Ce que ce dépôt ne contient PAS, et pourquoi
 
@@ -36,7 +45,7 @@ et tous les dépôts pointent là. En remettre un ici recréerait exactement
 l'ambiguïté qui a coûté ces mois-là.
 
 **Aucun `profile/README.md`.** Ce mécanisme n'existe que pour les
-*organisations*. Pour un compte personnel comme celui-ci, GitHub affiche le
+_organisations_. Pour un compte personnel comme celui-ci, GitHub affiche le
 `README.md` du dépôt qui porte **le nom du compte** : le profil vit donc dans
 [`mister-guiiug/mister-guiiug`](https://github.com/mister-guiiug/mister-guiiug).
 Un fichier posé ici ne s'afficherait nulle part.
